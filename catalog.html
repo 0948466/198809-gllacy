@@ -8,11 +8,11 @@
         <header class="main-header">
             <section class="container">
                 <div class="logo">
-                    <a href="index.html"><img src="dd" height="50" width="200"></a>  
+                    <a href="index.html"><img src="dd" height="50" width="200" alt="GllacyShop"></a>  
                 </div>
                 <nav class="main-navigation">
                     <ul>
-                        <li class="current" href="dd">Каталог</li>
+                        <li class="current"><a href="dd">Каталог</a></li>
                         <li><a href="dd">Доставка и оплата</a></li>
                         <li><a href="dd">О Компании</a></li>
                     </ul>
@@ -39,21 +39,24 @@
             </nav>
             <h1>Сливочное мороженое</h1>
             <div class="all-filters">
-                <div class="sorting">
-                    <h3>Сортировка:</h3>
-                </div>
-                <div class="range-filter">
-                    <div class="range-controls">
-                        <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
-                    </div>
-                    <div class="price-controls">
-                        <h3>Цена: <input class="min-price" type="text" value="100"> руб.
-                            - <input class="max-price" type="text" value="500"> руб.</h3>
-                    </div>
-                </div>
                 <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="sorting">
+                        <h3>Сортировка:</h3>
+                        <select name="sorting">
+                            <option value="by-popularity">по популярности</option>
+                        </select>
+                    </div>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                        <div class="price-controls">
+                            <h3>Цена: 100 руб. - 500 руб.</h3>
+                        </div>
+                    </div>
+                
                     <div class="fat-filter">                    
                         <h3>Жирность:</h3>
                         <div class="filter-radio">
@@ -64,15 +67,15 @@
                                 <li><label><input type="radio" name="filter" value="0%"> выше 30%</label></li>                                
                             </ul>
                         </div> 
-                      </div>
+                    </div>
                     <div class="filter-fillers">
                         <h3>Наполнители:</h3>
                         <ul>
-                            <li><label><input type="checkbox" name="chocolate" checked> шоколадные</label></li>
-                            <li><label><input type="checkbox" name="sugar-powder" checked> сахарные присыпки</label></li>
-                            <li><label><input type="checkbox" name="fruit"> фрукты</label></li>
-                            <li><label><input type="checkbox" name="syrups"> сиропы</label></li>
-                            <li><label><input type="checkbox" name="jams"> джемы</label></li>
+                            <li><label><input type="checkbox" name="fillers[]" value="шоколадные" checked> шоколадные</label></li>
+                            <li><label><input type="checkbox" name="fillers[]" value="сахарные присыпки" checked> сахарные присыпки</label></li>
+                            <li><label><input type="checkbox" name="fillers[]" value="фрукты"> фрукты</label></li>
+                            <li><label><input type="checkbox" name="fillers[]" value="сиропы"> сиропы</label></li>
+                            <li><label><input type="checkbox" name="fillers[]" value="джемы"> джемы</label></li>
                         </ul>
                     </div>
                     <button type="submit" class="filter">Применить</button>
@@ -82,50 +85,74 @@
             <div class="catalog-ice-cream">
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+                    <div class="hit-price"> <span>310 р</span>/кг
+                    </div>                
                     <a href="dd">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочно-кофейное с кусочками шоколада"></a>
+                    <div class="hit-price"> <span>380 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+                    <div class="hit-price"> <span>355 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное крем-брюле с карамелькой подливкой"></a>
+                    <div class="hit-price"> <span>415 р</span>/кг
+                    </div>  
                     <a href="dd">"Сливочное крем-брюле с карамелькой подливкой</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное с брусничным джемом"></a>
+                    <div class="hit-price"> <span>325 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочное с брусничным джемом</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочно-черничное с цельными ягодами черники"></a>
+                    <div class="hit-price"> <span>410 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочно-черничное с цельными ягодами черники</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочно-лимонное с карамельной присыпкой"></a>
+                    <div class="hit-price"> <span>375 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочно-лимонное с карамельной присыпкой</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное с шоколадной стружкой"></a>
+                    <div class="hit-price"> <span>320 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочное с шоколадной стружкой</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочно-ванильное с кусочками шоколада"></a>
+                    <div class="hit-price"> <span>440 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочно-ванильное с кусочками шоколада</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное с ментоловым сиропом"></a>
+                    <div class="hit-price"> <span>435 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочное с ментоловым сиропом</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное с кусочками черного шоколада"></a>
+                    <div class="hit-price"> <span>355 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочное с кусочками черного шоколада</a>
                 </div>
                 <div class="ice-cream"> 
                     <a href="dd"><img src="dd" height="200" width="200" alt="Сливочное с мятным сиропом"></a>
+                    <div class="hit-price"> <span>420 р</span>/кг
+                    </div>  
                     <a href="dd">Сливочное с мятным сиропом</a>
                 </div>
             </div>
