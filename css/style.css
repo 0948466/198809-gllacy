@@ -262,32 +262,52 @@ body > input[type="radio"] {
     margin-right: 0px;
 }
 
+.ice-cream a {
+    color:#ffffff;
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .promo {
     width: 1146px;
     font-size: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
         
 }
 
 .raspberry { 
     display: inline-block;
-    width: 560px;    
+    width: 510px;    
     margin-right: 26px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
-    color: #323232;
+    color: #ffffff;
     font-weight: normal;
     font-family: "Roboto Regular";
+    background-image: url(../img/background-discount-raspberry.jpg);
+    border-radius:15px;
+    padding-left: 21px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .chocolate {    
-    width: 560px;
+    width: 510px;
     display: inline-block;
-        font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
-    color: #323232;
+    color: #ffffff;
     font-weight: normal;
     font-family: "Roboto Regular";
+    background-image: url(../img/background-discount-chocolate.jpg);
+    border-radius: 15px;
+    border-radius:15px;
+    padding-left: 21px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .hit-menu {
@@ -315,14 +335,23 @@ body > input[type="radio"] {
 }
 
 .advantages {
-    width: 1146px;
+    width: 1125px;
     margin-bottom: 40px;
+    background: #ece0c5 url(../img/Background-advantages.png) repeat;
+    border-radius:15px;
+    padding-left: 21px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 22px;
+    
+    
 }
  
 .advantage-item {
-    width: 484px;
+    width: 540px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;    
 }
 
 .advantage-item:nth-child(1),.advantage-item:nth-child(3) {
@@ -330,7 +359,7 @@ body > input[type="radio"] {
 }
 
 .advantage-item p {
-    padding-left: 77px;
+    padding-left: 56px;
 }
 
 .advantage-item .icon {
@@ -371,10 +400,53 @@ background-image: url(../img/icon-thermometer.png)
     display: inline-block;
 }
 
+.paginator {
+    float: right;
+    min-width: 190px;
+    margin-bottom: 30px;
+}
+
+.paginator a {
+    text-decoration: none;    
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.paginator .current {
+    background-color: #ffffff;
+    color: #323232;    
+
+}
+
+.paginator .prev {
+    text-indent: -10000px;
+    margin-right: 15px;
+}
+
+.paginator .next {
+    text-indent: -10000px;
+    margin-left: 15px;
+}
+
+.line {
+/*    height: 1px;*/
+/*    background-color: #a9bbb1;   */
+    
+}
+
 .footer-social {
     width: 267px;    
     margin-left: 27px;
-    margin-right: 26px;
+    margin-right: 133px;
     float:left;
 }
 
@@ -382,6 +454,10 @@ background-image: url(../img/icon-thermometer.png)
     display: inline-block;
     min-height: 37px;
     min-width: 37px;  
+}
+
+.btn-social {
+    text-indent: -1000px;
 }
 
 .btn-social-twitter {
@@ -400,16 +476,57 @@ background-image: url(../img/icon-thermometer.png)
     background: url(../img/social-vk.svg) 3px 3px no-repeat; 
 }
 
-.footer-documentation {
-    width: 560px;
-    display: inline-block;
+.main-footer {
+    margin-top: 20px;
+}
+
+.footer-documentation {    
+    width: 453px;    
     margin-right: 26px;
     float: left;
+    display: relative;    
+}
+
+.footer-documentation a { 
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+    display: inline-block;
+    width: 293px;
+    margin-left: -4px;    
+}
+
+.footer-documentation a:nth-child(2n) {
+    padding-left: 22px;
+    width: 138px;
+    
+}
+
+.footer-documentation .icon-heart {
+    width: 15px;
+    height: 13px;
+    position: absolute;    
+    background-image: url(../img/icon-heart.png);
 }
 
 .footer-copyright {
-    width: 267px;
-    display: inline-block;    
+    width: 267px;       
     margin-right: 27px;    
     float: right;
+}
+
+.footer-copyright .html-academy {
+    padding-left: 79px;
+    padding-right: 80px;
+}
+
+.footer-copyright .made {
+    padding-left: 79px;    
+}    
+
+
+.footer-copyright a,.footer-copyright {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
 }
