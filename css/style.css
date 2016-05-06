@@ -1,7 +1,7 @@
 body {
     font-size: 0px;
     line-height: 0px;
-    color: #323232;
+    color: #ffffff;
     font-weight: normal;
     font-family: "Roboto Regular";
     margin: 0;
@@ -12,6 +12,7 @@ body {
 h1 {
     font-size: 35px;
     line-height: 41px;
+    color: #ffffff;
 }
 
 body > input[type="radio"] {
@@ -67,6 +68,14 @@ body > input[type="radio"] {
     line-height: 18px;
 }
 
+.main-menu .current {
+    padding: 7px 14px;
+    background-color: #d07058;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-right: -14px;
+}
+
 .main-menu .sub-menu {
     list-style: none;
     margin:0;
@@ -75,6 +84,7 @@ body > input[type="radio"] {
     position: absolute;
     width: 143px;
     display: none;
+    z-index: 30;
 }
 
 .main-menu .sub-menu a {
@@ -90,6 +100,10 @@ body > input[type="radio"] {
 
 .main-menu > li:hover .sub-menu {
     display: block;
+}
+
+.main-menu .sub-menu a:hover {
+    background-color: #fbded7;
 }
 
 .user-block {
@@ -115,6 +129,10 @@ body > input[type="radio"] {
     background: #9db1a5 url(../img/icon-search.svg) no-repeat 8px ;
 }
 
+.search:hover {
+    background: #f8f7f4 url(../img/icon-search-active.svg) no-repeat 8px;
+}
+
 .entrance,.shopping-cart {
     display: inline-block;
     vertical-align: top;
@@ -122,8 +140,12 @@ body > input[type="radio"] {
     background-color: #9db1a5;
     margin-right: 10px;
     border-radius: 15px;
-    text-align: center;
-    
+    text-align: center;    
+}
+
+.entrance:hover {
+    color: #323232;
+    background: #f8f7f4;
 }
 
 .entrance img {
@@ -138,12 +160,18 @@ body > input[type="radio"] {
     width: 21px; 
 }
 
+.shopping-cart:hover {
+    color: #323232;
+    background: #f8f7f4;
+}
+
 .hours-phone {
     float: right;
     width: 267px;
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
+    text-align: right;
 }
 
 .hours {
@@ -211,6 +239,11 @@ body > input[type="radio"] {
     cursor: pointer;
 }
 
+.slider-controls label:hover {
+    background-color: #b2c1b7;
+    
+}
+
 #btn-1:checked ~ .container #slide1,
 #btn-2:checked ~ .container #slide2,
 #btn-3:checked ~ .container #slide3 {
@@ -249,6 +282,16 @@ body > input[type="radio"] {
 
 .breadcrumbs ul li {
     display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;    
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;   
 }
 
 .all-filters {
@@ -257,20 +300,50 @@ body > input[type="radio"] {
 }
 
 .sorting {
-    display: inline-block;
+    display: inline-block;    
     width: 193px;
     margin-right: 15px;
+    color: #ffffff; 
+}
+
+.sorting-select {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #9db1a5;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;  
+}
+
+.sorting-select:hover {
+    background-color: #ffffff;
+    color: #323232;
 }
 
 .range-filter {
-    display: inline-block;
+    display: inline-block;    
     width: 219px;
     margin-right: 15px;
 }
 
 .fat-filter {
     display: inline-block;
-    width: 416px;    
+    color: #ffffff;   
+   
+}
+
+.filter-radio {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #9db1a5;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.filter-radio:hover {
+    background-color: #ffffff;
+    color: #323232;
 }
 
 .filter-radio ul {
@@ -281,22 +354,51 @@ body > input[type="radio"] {
 
 .filter-radio ul li {
     display: inline-block;
+    margin-right: 19px;
+    
 }
 
 .filter-fillers {
     display: inline-block;
-    width: 702px;
     margin-right: 14px;
+    color: #ffffff; 
 }
 
 .filter-fillers ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #9db1a5;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.filter-fillers ul:hover {
+    background-color: #ffffff;
+    color: #323232;
 }
 
 .filter-fillers ul li {
     display: inline-block;
+    padding-right: 20px;
+}
+
+.filter-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: #9db1a5;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    border: 2px solid #fcfcfc;
+}
+
+.filter-btn:hover {
+    background-color: #ffffff;
+    color: #323232;
 }
 
 .catalog-ice-cream {
@@ -310,6 +412,11 @@ body > input[type="radio"] {
     margin-right: 21px;
     vertical-align: top;
     margin-bottom: 40px;
+    position: relative;
+}
+
+.ice-cream:hover {
+    background-color: #9db1a5;
 }
 
 .ice-cream:nth-child(4n) {
@@ -374,28 +481,43 @@ body > input[type="radio"] {
     text-decoration: none;
 }
 
+.btn-promo:hover {
+    background-color: #f48568;
+}
+
 .hit-menu {
     width: 1146px;
     margin-bottom: 40px;
 }
 
-.hit {
-    width: 267px;
-    margin-right: 21px;
-    display: inline-block;
-    vertical-align: top;
-}
 
-.hit:nth-child(4n) {
-    margin-right: 0px;
-}
 
-.hit img {
-    border-radius: 50%;
+.icon-hit {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100%;
+    
 }
 
 .ice-cream img {
     border-radius: 50%;
+}
+
+.price {
+    position: absolute;
+    top: 216px;
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.price span {
+    font-size: 45px;
 }
 
 .advantages {
@@ -455,18 +577,27 @@ background-image: url(../img/icon-thermometer.svg)
 
 .news-subscribe .side-left {
     width: 539px;
+    height: 200px;
     float:left;
     margin-right: 26px;
     border-radius:15px;
     padding-left: 21px;
     padding-top: 25px;
-    padding-bottom: 80px;
+    
     font-size: 16px;
     line-height: 22px;
+    background: #ffffff url(../img/background-news-side-left-10-ways-of-serving.jpg) no-repeat;
+}
+
+.news-subscribe .side-left a {
+    font-size: 24px;
+    line-height: 30px;
+    color:#323232;
 }
 
 .news-subscribe .side-right {
     width: 539px;
+    height: 170px;
     float: right;
     border-radius:15px;
     padding-left: 21px;
@@ -474,8 +605,20 @@ background-image: url(../img/icon-thermometer.svg)
     padding-bottom: 25px;
     font-size: 16px;
     line-height: 22px;
+    background: #f8f7f4 url(../img/background-news-side-left-subscribe.png) no-repeat ;
+
 }
 
+.email {
+    padding: 12px 22px;
+    background-color: #f06541;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+}
+    
 .paginator {
     float: right;
     min-width: 190px;
@@ -495,6 +638,10 @@ background-image: url(../img/icon-thermometer.svg)
     vertical-align: middle;
     text-align: center;
     margin-right: 4px;
+}
+
+.paginator a:hover {
+    background-color: #9db1a5;
 }
 
 .paginator .current {
@@ -519,6 +666,33 @@ background-image: url(../img/icon-thermometer.svg)
     
 }
 
+.map {
+    width: 100%;
+    height: 430px;
+    background:#d9d3ba url(../img/map.jpg) no-repeat;
+}
+
+.contacts {
+    float: right;
+    width: 302px;
+    height: 252px;
+    background-color: #fffffe;
+    border-radius: 20px;
+    padding: 27px;
+    margin-top: 62px;
+}
+
+.feedback-form {   
+    padding: 12px 22px;
+    background-color: #f06541;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    
+}
+
 .footer-social {
     width: 267px;    
     margin-left: 27px;
@@ -528,8 +702,17 @@ background-image: url(../img/icon-thermometer.svg)
 
 .footer-social .btn-social {
     display: inline-block;
-    min-height: 37px;
-    min-width: 37px;  
+    min-height: 32px;
+    min-width: 32px;    
+    border: 3px solid #c2cec7;
+    border-radius: 100%;
+    align-content: center;
+    text-align: center;
+    opacity: 0.7;    
+}
+
+.footer-social .btn-social:hover {
+    opacity: 1.0;
 }
 
 .btn-social {
@@ -537,19 +720,19 @@ background-image: url(../img/icon-thermometer.svg)
 }
 
 .btn-social-twitter {
-    background: url(../img/social-twitter.svg) 3px 3px no-repeat; 
+    background: url(../img/social-twitter.svg) no-repeat; 
 }
 
 .btn-social-inst {
-    background: url(../img/social-inst.svg) 3px 3px no-repeat; 
+    background: url(../img/social-inst.svg)  no-repeat; 
 }
 
 .btn-social-fb {
-    background: url(../img/social-fb.svg) 3px 3px no-repeat; 
+    background: url(../img/social-fb.svg)  no-repeat; 
 }
 
 .btn-social-vk {
-    background: url(../img/social-vk.svg) 3px 3px no-repeat; 
+    background: url(../img/social-vk.svg)  no-repeat; 
 }
 
 .main-footer {
