@@ -37,7 +37,8 @@ body > input[type="radio"] {
 
 .main-navigation {
     float: left;
-    width: 560px;
+    width: 675px;    
+    margin-right: 26px;    
 }
 
 .logo {
@@ -45,17 +46,10 @@ body > input[type="radio"] {
     width: 154px;
 }
 
-.main-navigation {
-    width: 413px;
-    margin-right: 319px;
-}
-
 .main-menu {
     list-style: none;
     margin:0;
-    padding: 0;
-    
-    
+    padding: 0;   
 }
 
 .main-menu > li {
@@ -64,7 +58,13 @@ body > input[type="radio"] {
     padding-bottom: 11px;
     padding-left: 14px;
     padding-right: 14px;
-    position: relative;
+    position: relative;    
+}
+
+.main-menu > li > a {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .main-menu .sub-menu {
@@ -81,7 +81,11 @@ body > input[type="radio"] {
     display: block;
     padding-left: 21px;
     padding-top: 10px;
-    padding-bottom: 13px;    
+    padding-bottom: 13px;
+    color: #323232;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
 }
 
 .main-menu > li:hover .sub-menu {
@@ -93,9 +97,59 @@ body > input[type="radio"] {
     width: 267px;
 }
 
+.user-block a {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;    
+}
+
+.search {
+    display: inline-block;
+    vertical-align: top;
+    height: 32px;
+    width: 32px;
+    border-radius: 15px;
+/*    background-color: #9db1a5;*/
+/*    background-image: url(../img/icon-search.svg) no-repeat;*/
+    background: #9db1a5 url(../img/icon-search.svg) no-repeat 8px ;
+}
+
+.entrance,.shopping-cart {
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 16px;
+    background-color: #9db1a5;
+    margin-right: 10px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.entrance img {
+    padding-right: 8px;
+    height: 19px;
+    width: 20px; 
+}
+
+.shopping-cart img {
+    padding-right: 8px;
+    height: 20px;
+    width: 21px; 
+}
+
 .hours-phone {
     float: right;
     width: 267px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.hours {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 24px;
 }
 
 .index-slider {
@@ -119,7 +173,7 @@ body > input[type="radio"] {
 
 .slide-btn {
     display: inline-block;
-    padding: 12px 50px;
+    padding: 12px 41px;
     font-size: 32px;
     line-height: 44px;
     vertical-align: top;
@@ -310,6 +364,16 @@ body > input[type="radio"] {
     padding-bottom: 25px;
 }
 
+.btn-promo {
+    padding: 12px 22px;
+    background-color: #f06541;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
 .hit-menu {
     width: 1146px;
     margin-bottom: 40px;
@@ -369,19 +433,19 @@ body > input[type="radio"] {
 }
 
 .advantage-item .ice-cream {
-background-image: url(../img/icon-ice-cream.png)
+background-image: url(../img/icon-ice-cream.svg)
 }
 
 .advantage-item .cow {
-background-image: url(../img/icon-cow.png)
+background-image: url(../img/icon-cow.svg)
 }
 
 .advantage-item .sheet {
-background-image: url(../img/icon-sheet.png)
+background-image: url(../img/icon-sheet.svg)
 }
 
 .advantage-item .thermometer {
-background-image: url(../img/icon-thermometer.png)
+background-image: url(../img/icon-thermometer.svg)
 }
 
 .news-subscribe {
@@ -390,14 +454,26 @@ background-image: url(../img/icon-thermometer.png)
 }
 
 .news-subscribe .side-left {
-    width: 560px;
-    display: inline-block;
-    margin-right: 22px;
+    width: 539px;
+    float:left;
+    margin-right: 26px;
+    border-radius:15px;
+    padding-left: 21px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .news-subscribe .side-right {
-    width: 560px;
-    display: inline-block;
+    width: 539px;
+    float: right;
+    border-radius:15px;
+    padding-left: 21px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .paginator {
@@ -506,7 +582,7 @@ background-image: url(../img/icon-thermometer.png)
     width: 15px;
     height: 13px;
     position: absolute;    
-    background-image: url(../img/icon-heart.png);
+    background: url(../img/icon-heart.svg) no-repeat;
 }
 
 .footer-copyright {
