@@ -10,13 +10,20 @@ body {
 }
 
 h1 {
+    margin: 0;
+    padding: 0;
     font-size: 35px;
     line-height: 41px;
     color: #fff;
+    margin-bottom: 27px;
 }
 
 .hidden {
     display: none;
+}
+
+.show {
+    display: block;
 }
 
 .clearfix::after {
@@ -26,38 +33,41 @@ h1 {
 }
 
 .container {
-    width: 1200px;
+    width: 1146px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 22px;
     color: #323232;
-    font-weight: normal;       
+    font-weight: normal;    
 }
 
 .main-header {
-    margin-top: 23px;
+    margin-top: 24px;
 }
 
 .main-navigation {
     float: left;
-    width: 675px;    
-    margin-right: 26px;    
+    width: 600px;    
+    margin-right: 25px;    
 }
 
 .logo {
     float: left;
-    width: 154px;
+    width: 155px;
+    margin-top: -10px;
+    margin-right: 15px;
 }
 
 .main-menu {
     list-style: none;
     margin:0;
-    padding: 0;   
+    padding: 0;
+    font-size: 0;
 }
 
 .main-menu > li {
     display: inline-block;
-    padding: 9px  14px 11px 14px;
+    padding: 7px 0px;
     position: relative;    
 }
 
@@ -67,7 +77,8 @@ h1 {
     line-height: 18px;
     padding: 7px 14px;    
     border-radius: 15px;
-    text-decoration: none;    
+    text-decoration: none;
+    
 }
 
 .main-menu > li > a:hover {
@@ -132,6 +143,7 @@ h1 {
 .user-block {
     float: right;
     min-width: 267px;
+    
 }
 
 .user-block a {
@@ -175,6 +187,7 @@ h1 {
 
 .shopping-cart {
     background: #9db1a5 url(../img/icon-shopping-cart-empty.svg) no-repeat 15px;
+    margin: 0;
 }
 
 .shopping-cart:hover {
@@ -299,7 +312,7 @@ h1 {
 
 .breadcrumbs {
     width: 267px; 
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
@@ -331,10 +344,20 @@ h1 {
 }
 
 .sorting {
-    display: inline-block;    
+    display: inline-block;
+    vertical-align: top;
     width: 193px;
     margin-right: 15px;
     color: #fff; 
+}
+
+.sorting h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 7px;
 }
 
 .sorting-select {
@@ -352,15 +375,76 @@ h1 {
 }
 
 .range-filter {
-    display: inline-block;    
+    display: inline-block;
+    vertical-align: top;
     width: 219px;
     margin-right: 15px;
+
+}
+
+.price-controls {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+.range-controls {
+    position: relative;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #9db1a5;
+}
+
+.range-controls .scale {
+    height: 4px;
+    background-color: #d1dad3;
+    width: 188px;
+}
+
+.range-controls .bar {
+    height: 4px;
+    width: 100px;
+    margin-left: 30px;
+    background-color: #f8f7f4;
+}
+
+.toggle {
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    background-color: #f8f7f4; 
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    width: 22px;
+    height: 22px;
+    top: 7px;
+}
+
+.min-toggle {
+    left: 30px;    
+}
+
+.max-toggle {
+    left: 130px;
 }
 
 .fat-filter {
     display: inline-block;
-    color: #fff;   
-   
+    vertical-align: top;
+    color: #fff;  
+}
+
+.fat-filter h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 7px;
 }
 
 .filter-radio {
@@ -370,6 +454,7 @@ h1 {
     color: #fff;
     font-size: 16px;
     line-height: 18px;
+    margin-bottom: 17px;
 }
 
 .filter-radio:hover {
@@ -391,8 +476,18 @@ h1 {
 
 .filter-fillers {
     display: inline-block;
+    vertical-align: top;
     margin-right: 14px;
     color: #fff; 
+}
+
+.filter-fillers h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .filter-fillers ul {
@@ -414,10 +509,13 @@ h1 {
 
 .filter-fillers ul li {
     display: inline-block;
+    vertical-align: top;
     padding-right: 20px;
 }
 
 .filter-btn {
+    display: inline-block;
+    vertical-align: bottom;
     padding: 6px 16px;
     border-radius: 20px;
     background-color: #9db1a5;
@@ -657,8 +755,10 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     padding: 35px 25px;    
     font-size: 16px;
     line-height: 22px;
-    background: #f8f7f4;  
-
+    background: #f8f7f4;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-image: url('../img/Background-border-subscribe.png') 1;    
+   
 }
 
 .email-text {

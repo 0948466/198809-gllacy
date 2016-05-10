@@ -231,6 +231,30 @@
                 <input class="modal-search" type="text" name="modal-search" placeholder="Что ищем?">
             </form>
         </div>
-    
+        <script>
+          var linksearch = document.querySelector(".search");
+          var linkentrance = document.querySelector(".entrance");
+          var linkfeedback = document.querySelector(".feedback-form");
+          var popupsearch = document.querySelector(".modal-content-search");
+          var popupentrance = document.querySelector(".modal-content-entrance");
+          var popupfeedback = document.querySelector(".modal-content-feedback");
+          
+            
+          linksearch.addEventListener("click", function(event) {
+              event.preventDefault();
+              popupsearch.classList.add("show"); 
+          });
+            
+          linkentrance.addEventListener("click", function(evententrance) {
+              evententrance.preventDefault();
+              popupentrance.classList.add("show");
+          })
+          
+           linkfeedback.addEventListener("click", function(eventfeedback) {
+              eventfeedback.preventDefault();
+              popupfeedback.classList.add("show");
+          })
+           
+        </script>    
     </body>
 </html>
