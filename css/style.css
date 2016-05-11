@@ -862,12 +862,17 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .map {
+    position: relative;
     width: 100%;
     height: 430px;
     background:#d9d3ba url(../img/map.jpg) no-repeat;
 }
 
 .contacts {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 271px;
     float: right;
     width: 275px;
     height: 252px;
@@ -945,7 +950,7 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .main-footer {
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .footer-documentation {    
