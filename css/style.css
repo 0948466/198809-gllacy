@@ -9,6 +9,12 @@ body {
     background-color: #849d8f;
 }
 
+/*
+.wrap a:hover {
+    color: #ffbc9e;
+}
+*/
+
 h1 {
     margin: 0;
     padding: 0;
@@ -42,7 +48,7 @@ h1 {
 }
 
 .main-header {
-    margin-top: 24px;
+    padding-top: 24px;
 }
 
 .main-navigation {
@@ -178,7 +184,7 @@ h1 {
 
 .entrance:hover {
     color: #323232;
-      background: #f8f7f4 url(../img/icon-entrance-hover.svg) no-repeat 15px ; 
+    background: #f8f7f4 url(../img/icon-entrance-hover.svg) no-repeat 15px ; 
 }
 
 .entrance {
@@ -544,10 +550,6 @@ h1 {
     position: relative;
 }
 
-.ice-cream:hover {
-    background-color: #9db1a5;
-}
-
 .ice-cream:nth-child(4n) {
     margin-right: 0px;
 }
@@ -559,6 +561,43 @@ h1 {
     display: block;
     text-align: center;
     vertical-align: middle;
+}
+
+.quick-view {
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+.ice-cream .quick-view-btn { 
+    margin: 0;
+    padding: 0;
+    margin: 20px 15px;
+    top: 100%;
+    left: 0; 
+    display: block;
+    padding: 15px;    
+    background-color: #f06541;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;    
+}
+
+.ice-cream:hover .quick-view {
+    display: block;
+    background-color: #9db1a5;    
+}
+
+.ice-cream:hover {
+    background-color: #9db1a5;    
+}
+
+.ice-cream:hover a {
+text-decoration: none;
 }
 
 .promo {
@@ -778,6 +817,10 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     font-size: 18px;
     line-height: 24px;
 }
+
+.email-btn:hover {
+    background-color: #f48568;
+}
     
 .paginator {
     float: right;
@@ -905,8 +948,11 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
-    text-decoration: none;
-    
+    text-decoration: none;    
+}
+
+.feedback-form:hover {
+    background-color: #f48568;
 }
 
 .footer-social {
