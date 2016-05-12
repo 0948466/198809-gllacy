@@ -45,9 +45,9 @@
                 <nav class="breadcrumbs">
                     <ul>
                         <li><a class="index-page" href="#">Главная</a></li>
-                        »
+                        <li>»</li>
                         <li><a class="catalog-page" href="#">Каталог</a></li>
-                        »
+                        <li>»</li>
                         <li class="current">Сливочное</li>
                     </ul>
                 </nav>
@@ -219,27 +219,25 @@
                     <a class="btn-page" href="#3">3</a>
                     <a class="btn-page" href="#4">4</a>
                     <a class="next" href="#next">Вперёд</a>
-                </div>
-
-                <div class="line"><img src="img/line.png"></div>
+                </div>                
             </main>
 
 
              <footer class="main-footer">
                 <section class="container clearfix">
+                    <div class="line"></div>
                     <section class="footer-social">
                         <a class="btn-social btn-social-twitter" href="#tw"></a>
                         <a class="btn-social btn-social-inst" href="#inst"></a>
                         <a class="btn-social btn-social-fb" href="#facebook"></a>
                         <a class="btn-social  btn-social-vk" href="#vk"></a>
                     </section>
-                    <section class="footer-documentation">
-                        <div class="icon-heart">
-                               </div>
+                    <section class="footer-documentation">                        
                         <a class="provider" href="#">Для поставщиков</a>
                         <a class="documents" href="#">Наши документы</a>
                         <a class="production" href="#">О производстве</a>
                         <a class="ecology" href="#">Экологические стандарты</a>
+                        <div class="icon-heart"></div>
                     </section>
                     <section class="footer-copyright">
                         <a class="html-academy"><img src="img/logo-html-academy.svg" height="37" width="108" alt="html academy"></a>
@@ -262,8 +260,35 @@
                 <input class="modal-search" type="text" name="modal-search" placeholder="Что ищем?">
             </form>
         </div>
-        <div class="modal-content-shopping-cart">
-            
+        <div class="modal-content-shopping-cart hidden">
+            <div class="table">
+                <div class="raw">
+                    <div class="cell">
+                    </div>
+                    <div class="cell"><img src="img/orange.jpg" height="33" width="33" alt="фото"> 
+                    </div>
+                    <div class="cell">Пломбир с апельсиновым джемом
+                    </div>
+                    <div class="cell">1,5кгx<span>200руб.</span>
+                    </div>
+                    <div class="cell">300руб.
+                    </div>
+                </div>
+                <div class="raw">
+                    <div class="cell">
+                    </div>
+                    <div class="cell"><img src="img/strawberry.jpg" height="33" width="33" alt="фото">
+                    </div>
+                    <div class="cell">Клубничный пломбир с присыпкой из белого шоколада
+                    </div>
+                    <div class="cell">1,5кгх<span>300руб.</span>
+                    </div>
+                    <div class="cell">450руб.
+                    </div>
+                </div>  
+            </div>
+            <div class="total-price">Итого:750руб.</div>
+             <a class="checkout-btn" href="#">Оформить заказ</a>
         </div>
         <script src="js/script.js">
         </script> 

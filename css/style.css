@@ -259,17 +259,19 @@ h1 {
 .slider-controls {
     position: absolute;
     bottom: 25px;
-    left:0;
+    top:100%;
+    left:0;    
     z-index:20;
     font-size: 0;
+    margin-top: -85px
 }
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: top;
     width: 17px;
     height: 17px;
-    margin-right: 8px;
-    vertical-align: top;
+    margin-right: 8px;    
     border: 2px solid #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -543,8 +545,9 @@ h1 {
 
 .ice-cream {
     width: 267px;
+    box-sizing: border-box;
     float: left;
-    margin-right: 21px;
+    margin-right: 26px;
     vertical-align: top;
     margin-bottom: 40px;
     position: relative;
@@ -555,6 +558,8 @@ h1 {
 }
 
 .ice-cream a {
+    margin: 0;
+    padding: 0;
     color:#fff;
     font-size: 16px;
     line-height: 22px;
@@ -602,14 +607,16 @@ text-decoration: none;
 
 .promo {
     width: 1146px;
+    box-sizing: border-box;
     font-size: 0px;
     margin-bottom: 40px;    
 }
 
 .raspberry { 
     float: left;
-    width: 520px;
-    min-height: 173px;
+    width: 560px;
+    box-sizing: border-box;
+    min-height: 230px;
     font-size: 18px;
     line-height: 22px;
     color: #fff;
@@ -635,8 +642,9 @@ text-decoration: none;
 }
 
 .chocolate {    
-    width: 520px;
-    min-height: 173px;
+    width: 560px;
+    box-sizing: border-box;
+    min-height: 230px;
     float: right;
     font-size: 18px;
     line-height: 22px;
@@ -664,10 +672,9 @@ text-decoration: none;
 
 .hit-menu {
     width: 1146px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
 }
-
-
 
 .icon-hit {
     display: block;
@@ -676,7 +683,6 @@ text-decoration: none;
     width: 60px;
     height: 60px;
     border-radius: 100%;
-    
 }
 
 .ice-cream img {
@@ -698,7 +704,9 @@ text-decoration: none;
 }
 
 .advantages {
-    width: 1125px;
+    width: 1146px;
+    box-sizing: border-box;
+    min-height: 305px;
     margin-bottom: 40px;
     background: #ece0c5 url(../img/Background-advantages.png) repeat;
     border-radius:15px;    
@@ -765,8 +773,9 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .news-subscribe .side-left {
-    width: 520px;
-    min-height: 166px;
+    box-sizing: border-box;
+    width: 560px;
+    min-height: 220px;
     float:left;    
     padding: 27px 20px;    
     font-size: 16px;
@@ -787,22 +796,27 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .news-subscribe .side-right {
-    width: 500px;
-    min-height: 140px;
+    box-sizing: border-box;
+    width: 560px;
+    min-height: 220px;
     float: right;
     border-radius:15px;    
     padding: 35px 25px;    
     font-size: 16px;
     line-height: 22px;
-    background: #f8f7f4;
-    border: 5px solid rgba(0, 0, 0, 0.4);
-    border-image: url('../img/Background-border-subscribe.png') 1;    
-   
+    background: #f8f7f4 url("../img/background-news-side-right-subscribe.png") no-repeat;      
+}
+
+.subscribe-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
 }
 
 .email-text {
-    padding: 15px;
-    width: 330px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 365px;
     float: left;
     border-radius: 5px;
 }
@@ -900,9 +914,10 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 
 .next::after {
    transform: rotate(-225deg);
-   top: 15px;  
-       
+   top: 15px; 
 }
+
+
 
 .map {
     position: relative;
@@ -955,10 +970,14 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     background-color: #f48568;
 }
 
+.main-footer {
+    position: relative;
+    padding-top: 35px;    
+}
+
 .footer-social {
+    box-sizing: border-box;
     width: 267px;    
-    margin-left: 27px;
-    margin-right: 133px;
     float:left;
 }
 
@@ -968,7 +987,8 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     min-width: 31px;    
     border: 3px solid #c2cec7;
     border-radius: 100%;       
-    opacity: 0.7;    
+    opacity: 0.7;
+    margin-right: 10px;
 }
 
 .footer-social .btn-social:hover {
@@ -995,54 +1015,54 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     background: url(../img/social-vk.svg)  no-repeat; 
 }
 
-.main-footer {
-    margin-top: 35px;
+.line {
+    position: absolute;
+    top:0;
+    left: 50%;
+    height: 1px;
+    width: 1146px;
+    margin-left: -573px;
+    background-color: #a9bbb1;    
 }
 
-.footer-documentation {    
-    width: 453px;    
-    margin-right: 26px;
-    float: left;
-    display: relative; 
+.footer-documentation {
+    box-sizing: border-box;
+    position: relative;
+    width: 586px;  
+    float: left;    
 }
 
-.footer-documentation a { 
+.footer-documentation a {    
+    box-sizing: border-box;
     color: #fff;
     font-size: 13px;
     line-height: 18px;    
     float:left;
     width: 293px;
-    margin-left: -4px;    
+    padding-left: 5px;
 }
 
-.footer-documentation a:nth-child(2n) {
-    padding-left: 22px;
-    width: 138px;
+.footer-documentation a:nth-child(odd) {
+    padding-left: 155px;   
     
 }
 
 .footer-documentation .icon-heart {
     width: 15px;
     height: 13px;
+    top:0;
+    left: 134px;
     position: absolute;    
     background: url(../img/icon-heart.svg) no-repeat;
 }
 
 .footer-copyright {
-    width: 267px;       
-    margin-right: 27px;    
+    box-sizing: border-box;
+    width: 267px; 
     float: right;
+    padding-left: 77px;
+    margin-top:-15px;
 }
-
-.footer-copyright .html-academy {
-    padding-left: 78px;
-    padding-right: 80px;
-}
-
-.footer-copyright .made {
-    padding-left: 77px;    
-}    
-
 
 .footer-copyright a,.footer-copyright {
     color: #fff;
@@ -1189,4 +1209,57 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     width: 282px;
     padding: 10px 13px;
     border-radius: 5px;
+}
+
+.modal-content-shopping-cart {
+    position: absolute;
+    content: "";
+    top: 59px;
+    left: 50%;
+    margin-left: 33px;
+    padding: 20px 15px;
+    height: 100px;
+    width: 541px;
+    min-height: 242px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.modal-content-shopping-cart .table {
+    display: table;
+    border-bottom: 1px solid #cacac7;
+}
+
+.table img {
+    height: 33px;
+    width: 33px;
+    border-radius: 100%;
+}
+
+.modal-content-shopping-cart .raw {
+    display: table-row;
+}
+
+.modal-content-shopping-cart .cell {
+    display: table-cell;
+}
+
+.modal-content-shopping-cart .total-price {
+    text-align: right;
+}
+
+.modal-content-shopping-cart .checkout-btn {
+    float: right;
+    margin: 0;
+    padding: 0;   
+    padding: 10px;    
+    background-color: #f06541;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;  
 }

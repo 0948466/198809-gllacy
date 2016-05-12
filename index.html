@@ -20,7 +20,7 @@
                     </div>
                     <nav class="main-navigation">
                         <ul class="main-menu">
-                            <li><a a href="catalog.html">Каталог</a>
+                            <li><a href="catalog.html">Каталог</a>
                                 <ul class="sub-menu">
                                     <li><a class="main-new" href="#">Новинки</a></li>
                                     <li><a href="#">Сливочное</a></li>
@@ -169,9 +169,9 @@
                     </section>
                     <section class="side-right">
                         <form action="https://echo.htmlacademy.ru" method="post">
-                            <label>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                            <label><p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
                             всего самого вкусного, что у нас происходит. Обещаем не спамить
-                            и не слать всякой не нужной ерунды. Честно=)                
+                                и не слать всякой не нужной ерунды. Честно=)</p>                
                             <input class="email-text" type="text" name="email" placeholder="Электронная почта"></label>
                             <input class="email-btn" type="submit" value="Отправить">
                         </form>
@@ -204,13 +204,12 @@
                         <a class="btn-social btn-social-fb" href="#facebook"></a>
                         <a class="btn-social  btn-social-vk" href="#vk"></a>
                     </section>
-                    <section class="footer-documentation">
-                        <div class="icon-heart">
-                               </div>
+                    <section class="footer-documentation">                        
                         <a class="provider" href="#">Для поставщиков</a>
                         <a class="documents" href="#">Наши документы</a>
                         <a class="production" href="#">О производстве</a>
                         <a class="ecology" href="#">Экологические стандарты</a>
+                        <div class="icon-heart"></div>
                     </section>
                     <section class="footer-copyright">
                         <a class="html-academy"><img src="img/logo-html-academy.svg" height="37" width="108" alt="html academy"></a>
@@ -242,6 +241,36 @@
             <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
                 <input class="modal-search" type="text" name="modal-search" placeholder="Что ищем?">
             </form>
+        </div>
+        <div class="modal-content-shopping-cart hidden">
+            <div class="table">
+                <div class="raw">
+                    <div class="cell">
+                    </div>
+                    <div class="cell"><img src="img/orange.jpg" height="33" width="33" alt="фото"> 
+                    </div>
+                    <div class="cell">Пломбир с апельсиновым джемом
+                    </div>
+                    <div class="cell">1,5кгx<span>200руб.</span>
+                    </div>
+                    <div class="cell">300руб.
+                    </div>
+                </div>
+                <div class="raw">
+                    <div class="cell">
+                    </div>
+                    <div class="cell"><img src="img/strawberry.jpg" height="33" width="33" alt="фото">
+                    </div>
+                    <div class="cell">Клубничный пломбир с присыпкой из белого шоколада
+                    </div>
+                    <div class="cell">1,5кгх<span>300руб.</span>
+                    </div>
+                    <div class="cell">450руб.
+                    </div>
+                </div>  
+            </div>
+            <div class="total-price">Итого:750руб.</div>
+             <a class="checkout-btn" href="#">Оформить заказ</a>
         </div>
 
         <script src="js/script.js">

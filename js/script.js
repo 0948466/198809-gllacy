@@ -15,7 +15,7 @@ formsearch.addEventListener("keydown", function (event) {
             console.log("Ошибка поиска");
         }
     }
-})
+});
 
 window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
@@ -23,7 +23,7 @@ window.addEventListener("keydown", function(event) {
             popupsearch.classList.remove("show");
         }
     }
-})
+});
 
 var linkentrance = document.querySelector(".entrance");
 var popupentrance = document.querySelector(".modal-content-entrance");
@@ -59,7 +59,23 @@ window.addEventListener("keydown", function(event) {
             popupentrance.classList.remove("show");
         }
     }
-})
+});
+
+var linkshoppingcart = document.querySelector(".shopping-cart");
+var popupshoppingcart = document.querySelector(".modal-content-shopping-cart");
+
+linkshoppingcart.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupshoppingcart.classList.add("show");
+});
+
+window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+        if (popupshoppingcart.classList.contains("show")) {
+            popupshoppingcart.classList.remove("show");
+        }
+    }
+});
 
 var linkfeedback = document.querySelector(".feedback-form");
 var popupfeedback = document.querySelector(".modal-content-feedback");
@@ -80,7 +96,7 @@ formfeedback.addEventListener("submit", function (event) {
         event.preventDefault();
         console.log("Нужно ввести данные во все поля");
     }
-})
+});
 
 closefeedback.addEventListener("click", function (event) {
     event.preventDefault();
@@ -93,4 +109,4 @@ window.addEventListener("keydown", function(event) {
             popupfeedback.classList.remove("show");
         }
     }
-})
+});
