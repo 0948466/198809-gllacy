@@ -3,7 +3,7 @@ body {
     line-height: 0px;
     color: #fff;
     font-weight: normal;
-    font-family: "Roboto";
+    font-family: "Roboto","Helvetica",neue;
     margin: 0;
     padding: 0;
     background-color: #849d8f;
@@ -39,6 +39,18 @@ body {
     line-height: 22px;
     color: #323232;
     font-weight: normal;    
+}
+
+.btn-style {
+    box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
+}
+
+btn-style:hover {
+    box-shadow: 0 2px 2px 0 rgba(172,16,0,1);
+}
+
+.btn-style:active {
+    box-shadow: inset 0 2px 2px 0 rgba(148,39,24,1);
 }
 
 h1 {
@@ -92,6 +104,7 @@ h1 {
 
 .main-menu > li {
     display: inline-block;
+    vertical-align: top;
     padding: 7px 0px;
     position: relative;    
 }
@@ -109,6 +122,11 @@ h1 {
 .main-menu > li > a:hover {
     background-color: #f7f6f3;
     color: #333;
+}
+
+.main-menu > li > a:active {
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px 0 rgba(105,105,105,1);
 }
 
 .main-menu .current {
@@ -170,7 +188,9 @@ h1 {
 }
 
 .user-block {
-    float: right;  
+    float: right;
+    
+    
 }
 
 .user-block a {
@@ -188,11 +208,13 @@ h1 {
     height: 32px;
     width: 32px;
     border-radius: 15px;
-    background: #9db1a5 url(../img/icon-search.svg) no-repeat 8px ;
+    background:  url(../img/icon-search.svg) no-repeat 8px ;
+    background-color: rgba(255,255,255,0.2);
 }
 
 .search:hover {
-    background: #f8f7f4 url(../img/icon-search-active.svg) no-repeat 8px;
+    background: url(../img/icon-search-active.svg) no-repeat 8px;
+    background-color: rgba(248,247,244,1);
 }
 
 .entrance,.shopping-cart {
@@ -200,30 +222,35 @@ h1 {
     padding: 0;
     margin-left: 10px;
     float: left;    
-    padding: 7px 15px 7px 40px;
-    background-color: #9db1a5;    
+    padding: 7px 15px 7px 40px;        
     border-radius: 15px;
-    text-align: center;    
+    text-align: center;
+    
 }
 
 .entrance:hover {
     color: #323232;
-    background: #f8f7f4 url(../img/icon-entrance-hover.svg) no-repeat 15px ; 
+    background: url(../img/icon-entrance-hover.svg) no-repeat 15px;
+    background-color: rgba(248,247,244,1);
 }
 
 .entrance {
-   background: #9db1a5 url(../img/icon-entrance.svg) no-repeat 15px ; 
+   background: url(../img/icon-entrance.svg) no-repeat 15px;
+   background-color: rgba(255,255,255,0.2);
+    
 }
 
 .shopping-cart {
-    background: #9db1a5 url(../img/icon-shopping-cart-empty.svg) no-repeat 15px;
+    background: url(../img/icon-shopping-cart-empty.svg) no-repeat 15px;
+    background-color: rgba(255,255,255,0.2);
     width: 118px;
     box-sizing: border-box;
 }
 
 .shopping-cart:hover {
     color: #323232;
-    background: #f8f7f4 url(../img/icon-shopping-cart-full.png) no-repeat 15px;;
+    background: url(../img/icon-shopping-cart-full.png) no-repeat 15px;
+    background-color: rgba(248,247,244,0.99);
 }
 
 .hours-phone {
@@ -232,6 +259,14 @@ h1 {
     font-size: 14px;
     line-height: 16px;
     text-align: right;
+}
+
+.hours-phone p {
+    margin: 0;
+    padding: 0;
+    margin: 20px 0 5px 0;
+    
+    
 }
 
 .hours {
@@ -261,6 +296,7 @@ h1 {
 
 .slide-btn {
     display: inline-block;
+    vertical-align: top;
     padding: 12px 41px;
     font-size: 32px;
     line-height: 44px;
@@ -342,7 +378,8 @@ h1 {
     background-color: #fff;
 }
 
-.breadcrumbs {    
+.breadcrumbs {
+    margin-top: -25px;
     margin-bottom: 7px;
     font-size: 14px;
     line-height: 16px;
@@ -500,6 +537,7 @@ h1 {
 
 .filter-radio ul li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 19px;
     
 }
@@ -544,9 +582,9 @@ h1 {
 }
 
 .filter-btn {
-    display: inline-block;
+    display: inline-block;    
     vertical-align: bottom;
-    padding: 6px 16px;
+    padding: 6px 26px;
     border-radius: 20px;
     background-color: #9db1a5;
     color: #fff;
@@ -558,16 +596,21 @@ h1 {
 .filter-btn:hover {
     background-color: #fff;
     color: #323232;
+    border:none;
+    padding: 8px 18px;
 }
 
 .filter-btn:active {
     background-color: #eaeaea;
     color: #323232;
+    box-shadow: inset 0 2px 0 0 #696969;
+    border:none;
+    padding: 8px 18px;
 }
 
 .catalog-ice-cream {
     width: 1146px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .ice-cream {  
@@ -619,7 +662,7 @@ h1 {
 
 .ice-cream:hover .quick-view {
     display: block;
-    background-color: #9db1a5;    
+    background-color: rgba(255,255,255,0.2);    
 }
 
 .quick-view-btn:hover {
@@ -627,11 +670,11 @@ h1 {
 }
 
 .ice-cream:hover {
-    background-color: #9db1a5;    
+    background-color: rgba(255,255,255,0.2);
 }
 
 .ice-cream:hover a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .promo {    
@@ -645,7 +688,7 @@ text-decoration: none;
     font-size: 18px;
     line-height: 22px;
     color: #fff;
-    background-image: url(../img/background-discount-raspberry.jpg);
+    background: #61010c url(../img/background-discount-raspberry.jpg);
     border-radius:15px;    
     padding: 20px;    
 }
@@ -653,7 +696,7 @@ text-decoration: none;
 .promo h2 {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -672,7 +715,7 @@ text-decoration: none;
     font-size: 18px;
     line-height: 22px;
     color: #fff;        
-    background-image: url(../img/background-discount-chocolate.jpg);
+    background: #482a1d url(../img/background-discount-chocolate.jpg);
     border-radius: 15px;     
     padding: 20px;   
 }
@@ -727,47 +770,51 @@ text-decoration: none;
 
 .advantages {   
     min-height: 305px;
+    box-sizing: border-box;
     margin-bottom: 40px;
     background: #ece0c5 url(../img/Background-advantages.png) repeat;
-    border-radius:15px;    
-    padding: 20px;    
+    border-radius:15px;   
+    padding: 25px 20px 0px 20px;
     font-size: 16px;
     line-height: 22px;  
 }
  
 .advantages h1 {
     padding: 0;
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 0;    
     font-size: 24px;
     line-height: 30px; 
     color: #323232;
+    margin-bottom: 24px;
 }
 
 .advantages p {
     margin: 0;
     padding: 0;
-    margin-bottom: 25px;
+    padding-bottom: 20px;
 }
 
-.advantage-item {    
+.advantage-item {
+    width: 540px;
+    box-sizing: border-box;
     float:right;
-    vertical-align: top;    
+    vertical-align: top;
+    position: relative;
+    padding-left: 57px;
 }
 
 .advantage-item:nth-child(1),.advantage-item:nth-child(3) {
     margin-right: 26px;
+   padding-left: 57px;  
     float: left;
-}
-
-.advantage-item p {
-    padding-left: 56px;
 }
 
 .advantage-item .icon {
     width: 47px;
     height: 47px;
-    position: absolute; 
+    position: absolute;
+    top: -10px;
+    left: 0px;
 }
 
 .advantage-item .ice-cream {
@@ -839,6 +886,7 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     padding: 12px 18px;
     background-color: #f06541;
     border-radius: 100px;
+    border: none;
     color: #fff;
     text-decoration: none;
     float: right;
@@ -853,19 +901,24 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 .paginator {
     float: right;    
     margin-bottom: 30px;
+    padding-left: 61px;
 }
 
+
+
 .paginator a {
+    margin: 0;
+    padding: 0;
     text-decoration: none;    
-    display: inline-block;    
+    display: inline-block;
+    vertical-align: top;
     color: #fff;
     font-size: 16px;
     line-height: 26px;
     height: 26px;
     width: 26px;
     border-radius: 100%;    
-    text-align: center;
-    margin-right: 4px;
+    text-align: center;    
 }
 
 .paginator a:hover {
@@ -888,14 +941,12 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .paginator .prev {
-    text-indent: -10000px;
-    margin-right: 15px;    
+    text-indent: -10000px;        
     position: relative;
 }
 
 .paginator .next {
-    text-indent: -10000px;
-    margin-right: 15px;    
+    text-indent: -10000px;        
     position: relative;
 }
 
@@ -972,7 +1023,8 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     line-height: 22px;
 }
 
-.feedback-form {   
+.feedback-form {    
+    border: none;
     padding: 12px 22px;
     background-color: #f06541;
     border-radius: 100px;
@@ -992,26 +1044,29 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .footer-social {   
-    float:left;
+    float:left;    
 }
 
 .footer-social .btn-social {
     display: inline-block;
-    min-height: 31px;
-    min-width: 31px;    
-    border: 3px solid #c2cec7;    
+    vertical-align: top;
+    height: 31px;
+    width: 31px;  
+    border: 3px solid rgba(255,255,255,0.5);
     border-radius: 100%;       
-    opacity: 0.7;
+    opacity: 0.8;
     margin-right: 10px;    
 }
 
-.footer-social .btn-social:hover {
-    opacity: 1.0;
+.footer-social .btn-social:hover {    
+    opacity: 1.0;    
+    border: 3px solid rgba(255,255,255,0.71);
 }
 
 .footer-social .btn-social:active {
     opacity: 1.0;    
-    border: 3px solid #d9e1dd;
+    border: 3px solid rgb(254,254,254,0.70);
+    box-shadow: inset 0 2px 0 0 #888888;
 }
 
 .btn-social {
@@ -1044,11 +1099,11 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     background-color: #a9bbb1;    
 }
 
-.footer-documentation {
+.footer-documentation {    
+    position: relative;     
+    float: left;
+    width: 586px;
     box-sizing: border-box;
-    position: relative;
-    width: 586px;  
-    float: left;    
 }
 
 .footer-documentation a {    
@@ -1075,9 +1130,7 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     background: url(../img/icon-heart.svg) no-repeat;
 }
 
-.footer-copyright {
-    box-sizing: border-box;
-    width: 267px; 
+.footer-copyright {      
     float: right;
     padding-left: 77px;
     margin-top:-15px;
