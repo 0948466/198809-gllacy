@@ -142,7 +142,7 @@ h1 {
     padding: 0;
     background-color: #f8f7f4;
     position: absolute;
-    width: 143px;
+    min-width: 143px;
     display: none;
     z-index: 30;
     top: 40px;
@@ -596,16 +596,14 @@ h1 {
 .filter-btn:hover {
     background-color: #fff;
     color: #323232;
-    border:none;
-    padding: 8px 18px;
+    border: 2px solid #fff;    
 }
 
 .filter-btn:active {
     background-color: #eaeaea;
     color: #323232;
     box-shadow: inset 0 2px 0 0 #696969;
-    border:none;
-    padding: 8px 18px;
+    border: 2px solid #eaeaea; 
 }
 
 .catalog-ice-cream {
@@ -1300,6 +1298,9 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .modal-content-shopping-cart .table {
+    min-height: 70px;
+    min-width: 510px;
+    box-sizing: border-box;
     display: table;
     border-bottom: 1px solid #cacac7;
     padding: 0;
