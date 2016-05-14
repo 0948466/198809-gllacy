@@ -1192,7 +1192,8 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     font-size: 16px;
     line-height: 24px;
     background-color: #f8f7f4;
-    border-radius: 5px;    
+    border-radius: 5px; 
+    z-index: 20;
 }
 
 .modal-feedback-close {
@@ -1205,7 +1206,7 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     background-color: transparent;
     border: 0;
     outline: 0;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .modal-feedback-close::before,
@@ -1258,8 +1259,20 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     padding: 10px 25px;
     font-size: 18px;
     line-height: 24px;
-    color: #fefefe;
+    color: #fefefe;    
 }
+
+
+.modal-overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+}
+
 
 .modal-content-search {
     position: absolute;

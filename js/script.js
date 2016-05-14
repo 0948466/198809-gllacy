@@ -80,6 +80,7 @@ window.addEventListener("keydown", function(event) {
 var linkfeedback = document.querySelector(".feedback-form");
 var popupfeedback = document.querySelector(".modal-content-feedback");
 var closefeedback = document.querySelector(".modal-feedback-close");
+var overlay = document.querySelector(".modal-overlay");
 var formfeedback = popupfeedback.querySelector(".modal-feedback-form");
 var feedbackname = popupfeedback.querySelector(".feedback-name");
 var feedbackemail = popupfeedback.querySelector(".feedback-email");
@@ -88,6 +89,7 @@ var feedbacktext = popupfeedback.querySelector(".feedback-text");
 linkfeedback.addEventListener("click", function (event) {
   event.preventDefault();
   popupfeedback.classList.add("show");
+  overlay.classList.add("show");
   feedbackname.focus();    
 });
 
@@ -101,12 +103,14 @@ formfeedback.addEventListener("submit", function (event) {
 closefeedback.addEventListener("click", function (event) {
     event.preventDefault();
     popupfeedback.classList.remove("show");
+    overlay.classList.remove("show");
 });
 
 window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
         if (popupfeedback.classList.contains("show")) {
             popupfeedback.classList.remove("show");
+            overlay.classList.remove("show");
         }
     }
 });
