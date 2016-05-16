@@ -103,6 +103,10 @@ h1 {
     min-width: 560px;
 }
 
+.header-side-right {
+    min-width: 267px;
+}
+
 .main-navigation {  
     }
 
@@ -624,7 +628,7 @@ h1 {
     border: 2px solid #eaeaea; 
 }
 
-.catalog-ice-cream {
+.catalog-ice-creams {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -639,13 +643,9 @@ h1 {
     margin-bottom: 50px;
     }
 
-.ice-cream {    
+.ice-creams {    
     margin-bottom: 40px;
     position: relative;
-    min-width: 200px;
-    min-height: 200px;
-    max-height: 267px;
-    max-width: 267px;
 }
 
 .icon-hit {
@@ -657,12 +657,9 @@ h1 {
     border-radius: 100%;
 }
 
-.ice-cream img {
+.ice-creams img {
+    max-width: 100%;
     border-radius: 50%;
-    min-width: 200px;
-    min-height: 200px;
-    max-height: 267px;
-    max-width: 267px;
     
 }
 
@@ -680,7 +677,7 @@ h1 {
     background: url(../img/icon-ruble.svg) 80px 9px no-repeat;
 }
 
-.ice-cream a {
+.ice-creams a {
     margin: 0;
     padding: 0;
     color:#fff;
@@ -699,7 +696,7 @@ h1 {
     
 }
 
-.ice-cream .quick-view-btn { 
+.ice-creams .quick-view-btn { 
     margin: 0;
     padding: 0;
     margin: 20px 15px;
@@ -715,7 +712,7 @@ h1 {
     text-decoration: none;    
 }
 
-.ice-cream:hover .quick-view {
+.ice-creams:hover .quick-view {
     display: block;
     background-color: rgba(255,255,255,0.2);    
 }
@@ -724,11 +721,11 @@ h1 {
     background-color: #f48568;;
 }
 
-.ice-cream:hover {
+.ice-creams:hover {
     background-color: rgba(255,255,255,0.2);
 }
 
-.ice-cream:hover a {
+.ice-creams:hover a {
     text-decoration: none;
 }
 
