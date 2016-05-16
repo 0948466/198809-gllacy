@@ -16,23 +16,26 @@ body {
 */
 
 .col-1 {
-    width: 267px;
+    flex-basis: 23.3%;
     box-sizing: border-box;
+    min-width: 200px;
 }
 
 .col-2 {
-    width: 560px;
+    flex-basis: 48.8%;
     box-sizing: border-box;
+    min-width: 420px;
 }
 
-.row {
-    width: 1146px;
+.row { 
+    flex-basis: 100%;
     box-sizing: border-box;
     
 }
 
 .container {
-    width: 1146px;
+    max-width: 1146px;
+    min-width: 860px;    
     box-sizing: border-box;
     margin: 0 auto;
     font-size: 16px;
@@ -403,7 +406,7 @@ h1 {
 .breadcrumbs a {
     color: #fff;
     font-size: 14px;
-    line-height: 16px;   
+    line-height: 16px;      
 }
 
 .all-filters {    
@@ -607,20 +610,51 @@ h1 {
 }
 
 .catalog-ice-cream {
-    width: 1146px;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
     margin-bottom: 50px;
-}
+    }
 
-.ice-cream {  
-    float: left;
-    margin-right: 26px;
-    vertical-align: top;
+.ice-cream {    
     margin-bottom: 40px;
     position: relative;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 267px;
+    max-width: 267px;
 }
 
-.ice-cream:nth-child(4n) {
-    margin-right: 0px;
+.icon-hit {
+    display: block;
+    position: absolute;
+    background: #fff url('../img/icon-hit.png');
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.ice-cream img {
+    border-radius: 50%;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 267px;
+    max-width: 267px;
+    
+}
+
+.price {
+    position: absolute;
+    top: 216px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.ruble {
+    font-size: 45px;
+    padding-right: 35px;
+    background: url(../img/icon-ruble.svg) 80px 9px no-repeat;
 }
 
 .ice-cream a {
@@ -676,19 +710,22 @@ h1 {
 }
 
 .promo {    
-    font-size: 0px;
-    margin-bottom: 40px;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;      
+    margin-bottom: 40px;
+
 }
 
-.raspberry { 
-    float: left;
+.raspberry {    
     min-height: 230px;
     font-size: 18px;
     line-height: 22px;
     color: #fff;
     background: #61010c url(../img/background-discount-raspberry.jpg);
     border-radius:15px;    
-    padding: 20px;    
+    padding: 20px;
+    
 }
 
 .promo h2 {
@@ -707,15 +744,15 @@ h1 {
     line-height: 22px;
 }
 
-.chocolate {  
-    min-height: 230px;
-    float: right;
+.chocolate {     
+    min-height: 230px;    
     font-size: 18px;
     line-height: 22px;
     color: #fff;        
     background: #482a1d url(../img/background-discount-chocolate.jpg);
     border-radius: 15px;     
-    padding: 20px;   
+    padding: 20px;
+    
 }
 
 .btn-promo {
@@ -734,39 +771,11 @@ h1 {
     background-color: #f48568;
 }
 
-.hit-menu {    
-    margin-bottom: 0px;
-    
-}
 
-.icon-hit {
-    display: block;
-    position: absolute;
-    background: #fff url('../img/icon-hit.png');
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-}
 
-.ice-cream img {
-    border-radius: 50%;
-}
-
-.price {
-    position: absolute;
-    top: 216px;
-    color: #fff;
-    font-size: 35px;
-    line-height: 45px;
-}
-
-.ruble {
-    font-size: 45px;
-    padding-right: 35px;
-    background: url(../img/icon-ruble.svg) 80px 9px no-repeat;
-}
-
-.advantages {   
+.advantages {
+    display: flex;
+    flex-flow: row wrap;
     min-height: 305px;
     box-sizing: border-box;
     margin-bottom: 40px;
@@ -786,25 +795,24 @@ h1 {
     margin-bottom: 24px;
 }
 
+.advantages-all {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .advantages p {
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
 }
 
-.advantage-item {
-    width: 540px;
-    box-sizing: border-box;
-    float:right;
-    vertical-align: top;
+.advantage-item {           
     position: relative;
     padding-left: 57px;
 }
 
-.advantage-item:nth-child(1),.advantage-item:nth-child(3) {
-    margin-right: 26px;
-   padding-left: 57px;  
-    float: left;
+.advantage-item:nth-child(1),.advantage-item:nth-child(3) {    
+   padding-left: 57px;      
 }
 
 .advantage-item .icon {
@@ -831,13 +839,14 @@ background: url(../img/icon-sheet.svg) no-repeat;
 background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
-.news-subscribe {    
+.news-subscribe { 
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
 .news-subscribe .side-left {
-    min-height: 220px;
-    float:left;    
+    min-height: 220px;       
     padding: 27px 20px;    
     font-size: 16px;
     line-height: 22px;
@@ -857,8 +866,7 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .news-subscribe .side-right {
-    min-height: 220px;
-    float: right;
+    min-height: 220px;    
     border-radius:15px;    
     padding: 35px 25px;    
     font-size: 16px;
@@ -1092,7 +1100,7 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     top:0;
     left: 50%;
     height: 1px;
-    width: 1146px;
+    
     margin-left: -573px;
     background-color: #a9bbb1;    
 }

@@ -13,7 +13,7 @@
             <input class="hidden" type="radio" id="btn-2" name="toggle">
             <input class="hidden" type="radio" id="btn-3" name="toggle">
        <div class="wrap">
-            <header class="main-header container clearfix">
+             <header class="main-header container clearfix">
                 
                     <div class="logo">
                         <a><img src="img/logo-gllacy.svg" height="63" width="154" alt="GllacyShop"></a>  
@@ -44,8 +44,7 @@
                     </div>
                         
             </header>
-
-            <main class="container clearfix">
+            <main class="container">
                 <section class="index-slider">
                     <div class="slide" id="slide1">
                         <div class="slide-title">Крем-брюле и пломбир
@@ -70,7 +69,7 @@
 
                 </section>
 
-                <div class="promo clearfix row">
+                <section class="promo row">
                     <div class="discount raspberry col-2">
                         <h2>Малинка даром!</h2>
                         <p>При покупке 2 кг любого фруктового мороженного, добавим
@@ -83,8 +82,9 @@
                         вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                         <a class="btn-promo btn-style" href="#">Хочу шоколадки!</a>
                     </div> 
-                </div>
-                <section class="hit-menu clearfix row">
+                </section>
+                
+                <div class="catalog-ice-cream row">
                     <div class="ice-cream col-1">
                         <div class="icon-hit"></div>
                         <a href="#"><img src="img/orange.jpg" height="267" width="267" alt="Хит Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
@@ -123,27 +123,27 @@
                             <a class="quick-view-btn btn-style" href="#">Быстрый просмотр</a>
                         </div>              
                     </div>
-                </section>
+                </div>
 
-                <section class="advantages clearfix row">
+                <section class="advantages row">
                     <h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного
                     производства на развес</h1>
-                    <div class="advantages-all clearfix">
-                       <div class="advantage-item">
+                    <div class="advantages-all row">
+                       <div class="advantage-item col-2">
                            <div class="icon ice-cream">
                            </div>
                            <p>Все наше мороженное изготавливается на собственном
                            производстве,с использованием современного оборудования
                            и проверенных временем технологий.</p>
                        </div>
-                       <div class="advantage-item">
+                       <div class="advantage-item col-2">
                            <div class= "icon cow">
                            </div>
                            <p>Закупка ингредиентов производится только у проверенных
                            фермерских хозяйств и компаний,с которыми нас связывает
                            долговременное сотрудничество.</p>
                        </div> 
-                       <div class="advantage-item">
+                       <div class="advantage-item col-2">
                            <div class="icon sheet">
                            </div>
                            <p>Для приготовления мороженного используются настоящие
@@ -151,7 +151,7 @@
                            ингредиенты и добавки произведены из натурального,
                            экологически чистого сырья.</p>
                        </div> 
-                       <div class="advantage-item">
+                       <div class="advantage-item col-2">
                            <div class="icon thermometer">
                            </div>
                            <p>Доставка нашего мороженного до заказчиков осуществляется
@@ -162,7 +162,7 @@
                     </div>     
                 </section>
 
-                <div class="news-subscribe clearfix row">
+                <div class="news-subscribe row">
                     <section class="side-left col-2">
                         <h4>Новое в нашем блоге</h4>
                         <a class="news" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a>
@@ -172,7 +172,7 @@
                             <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
                             всего самого вкусного, что у нас происходит. Обещаем не спамить
                                 и не слать всякой не нужной ерунды. Честно=)</p>                
-                            <input class="email-text" type="text" name="email" placeholder="Электронная почта">
+                            <input class="email-text" type="text" name="email" placeholder="Электронная почта" autofocus>
                             <input class="email-btn btn-style" type="submit" value="Отправить">
                         </form>
                     </section>
@@ -230,7 +230,7 @@
             <button class="modal-feedback-close" type="button">Закрыть</button>
             <h2>Мы обязательно вам ответим!</h2>
             <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+                <input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" autofocus>
                 <input class="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
                 <input class="feedback-text" type="text" name="feedback-text" placeholder="Напишите что-нибудь...">
                 <button type="submit" class="btn-send btn-style">Отправить</button>
@@ -241,7 +241,7 @@
         
         <div class="modal-content-search hidden">
             <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="modal-search" type="text" name="modal-search" placeholder="Что ищем?">
+                <input class="modal-search" type="search" name="modal-search" placeholder="Что ищем?" autofocus>
             </form>
         </div>
         <div class="modal-content-shopping-cart hidden">
