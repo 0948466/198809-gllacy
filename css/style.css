@@ -16,18 +16,26 @@ body {
 */
 
 .col-1 {
+    -webkit-flex-basis: 23.3%;
+    -ms-flex-preferred-size: 23.3%;
     flex-basis: 23.3%;
     box-sizing: border-box;
     min-width: 200px;
+    max-width: 267px;
 }
 
 .col-2 {
+    -webkit-flex-basis: 48.8%;
+    -ms-flex-preferred-size: 48.8%;
     flex-basis: 48.8%;
     box-sizing: border-box;
     min-width: 420px;
+    max-width: 560px;
 }
 
 .row { 
+    -webkit-flex-basis: 100%; 
+    -ms-flex-preferred-size: 100%; 
     flex-basis: 100%;
     box-sizing: border-box;
     
@@ -83,16 +91,22 @@ h1 {
 
 .main-header {
     padding-top: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.main-navigation {
-    float: left;
-    width: 600px;    
-    margin-right: 25px;    
+.header-side-left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    min-width: 560px;
 }
 
-.logo {
-    float: left;
+.main-navigation {  
+    }
+
+.logo {    
     width: 155px;
     margin-top: -10px;
     margin-right: 15px;
@@ -190,9 +204,11 @@ h1 {
     background-color: #f6b5a5;
 }
 
-.user-block {
-    float: right;
-    
+.user-block {    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    min-width: 267px;   
     
 }
 
@@ -205,9 +221,7 @@ h1 {
 
 .search {
     margin: 0;
-    padding: 0;
-    margin-left: 6px;
-    float: left;
+    padding: 0;    
     height: 32px;
     width: 32px;
     border-radius: 15px;
@@ -224,8 +238,7 @@ h1 {
     margin: 0;
     padding: 0;
     margin-left: 10px;
-    float: left;    
-    padding: 7px 15px 7px 40px;        
+     padding: 7px 15px 7px 40px;        
     border-radius: 15px;
     text-align: center;
     
@@ -257,17 +270,19 @@ h1 {
 }
 
 .hours-phone {
-    float: right;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
     color: #fff;
     font-size: 14px;
-    line-height: 16px;
-    text-align: right;
+    line-height: 16px;    
 }
 
 .hours-phone p {
     margin: 0;
     padding: 0;
-    margin: 20px 0 5px 0;
+    
     
     
 }
@@ -610,8 +625,16 @@ h1 {
 }
 
 .catalog-ice-cream {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap; 
+    -webkit-box-pack: justify; 
+    -webkit-justify-content: space-between; 
+    -ms-flex-pack: justify; 
     justify-content: space-between;
     margin-bottom: 50px;
     }
@@ -710,8 +733,16 @@ h1 {
 }
 
 .promo {    
+    display: -webkit-box;    
+    display: -webkit-flex;    
+    display: -ms-flexbox;    
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;      
     margin-bottom: 40px;
 
@@ -774,7 +805,12 @@ h1 {
 
 
 .advantages {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     min-height: 305px;
     box-sizing: border-box;
@@ -796,7 +832,12 @@ h1 {
 }
 
 .advantages-all {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
@@ -840,7 +881,13 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .news-subscribe { 
+    display: -webkit-box; 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 40px;
 }
@@ -971,23 +1018,27 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 
 .prev::before,
 .next::before {
+   -webkit-transform: rotate(-45deg);
    transform: rotate(-45deg);
     top:9px;
 }
 
 .next::before {
+   -webkit-transform: rotate(225deg);
    transform: rotate(225deg);
     top:9px;
 }
 
 .prev::after,
 .next::after {
+   -webkit-transform: rotate(45deg);
    transform: rotate(45deg);
    top: 15px;  
        
 }
 
 .next::after {
+   -webkit-transform: rotate(-225deg);
    transform: rotate(-225deg);
    top: 15px; 
 }
@@ -1229,10 +1280,12 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 }
 
 .modal-feedback-close::before {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .modal-feedback-close::after {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -1371,13 +1424,16 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     width: 16px;
     height: 2px;
     background-color: #000000;
+    
 }
 
 .modal-content-shopping-cart-close::before {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .modal-content-shopping-cart-close::after {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
