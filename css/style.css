@@ -887,15 +887,17 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 40px;
+    
 }
 
 .news-subscribe .side-left {
-    min-height: 220px;       
+    height: 220px;       
     padding: 27px 20px;    
     font-size: 16px;
     line-height: 22px;
     background: #fff url(../img/background-news-side-left-10-ways-of-serving.jpg) no-repeat;
-    border-radius:15px; 
+    border-radius:15px;
+    
 }
 
 .news-subscribe .side-left h4 {
@@ -909,13 +911,24 @@ background: url(../img/icon-thermometer.svg) no-repeat;
     color:#323232;
 }
 
+.news-subscribe .border-subscribe {   
+height: 210px;
+    background: #f8f7f4;
+    border-radius: 15px;
+    
+
+}
+
 .news-subscribe .side-right {
-    min-height: 220px;    
+          background: repeating-linear-gradient(135deg,white,white 5px,#92cdff 5px,#92cdff 10px,white 10px,white 15px,#fe9e90 15px,#fe9e90 20px);
+    padding: 5px;
+    height: 220px;
     border-radius:15px;    
-    padding: 35px 25px;    
+/*    padding: 35px 25px;    */
     font-size: 16px;
     line-height: 22px;
-    background: #f8f7f4 url("../img/background-news-side-right-subscribe.png") no-repeat;      
+/*    background: #f8f7f4 url("../img/background-news-side-right-subscribe.png") no-repeat; */
+    
 }
 
 .subscribe-text {
