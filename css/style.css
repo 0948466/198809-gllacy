@@ -25,7 +25,7 @@ body {
 }
 
 .col-2 {
-    -webkit-flex-basis: 48.8%;
+     -webkit-flex-basis: 48.8%;
     -ms-flex-preferred-size: 48.8%;
     flex-basis: 48.8%;
     box-sizing: border-box;
@@ -746,11 +746,11 @@ h1 {
 }
 
 .raspberry {    
-    min-height: 230px;
+    height: 230px;
     font-size: 18px;
     line-height: 22px;
     color: #fff;
-    background: #61010c url(../img/background-discount-raspberry.jpg);
+    background: #61010c url(../img/background-discount-raspberry-big.jpg);
     border-radius:15px;    
     padding: 20px;
     
@@ -773,11 +773,11 @@ h1 {
 }
 
 .chocolate {     
-    min-height: 230px;    
+    height: 230px;    
     font-size: 18px;
     line-height: 22px;
     color: #fff;        
-    background: #482a1d url(../img/background-discount-chocolate.jpg);
+    background: #482a1d url(../img/background-discount-chocolate-big.jpg);
     border-radius: 15px;     
     padding: 20px;
     
@@ -810,11 +810,11 @@ h1 {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     min-height: 305px;
+    max-height: 372px;
     box-sizing: border-box;
     margin-bottom: 40px;
     background: #ece0c5 url(../img/Background-advantages.png) repeat;
-    border-radius:15px;   
-    padding: 25px 20px 0px 20px;
+    border-radius:15px;      
     font-size: 16px;
     line-height: 22px;  
 }
@@ -826,6 +826,8 @@ h1 {
     line-height: 30px; 
     color: #323232;
     margin-bottom: 24px;
+    margin-top: 23px;
+    margin-left: 20px;
 }
 
 .advantages-all {
@@ -836,6 +838,7 @@ h1 {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .advantages p {
@@ -846,11 +849,11 @@ h1 {
 
 .advantage-item {           
     position: relative;
-    padding-left: 57px;
+    padding-left: 55px;
 }
 
 .advantage-item:nth-child(1),.advantage-item:nth-child(3) {    
-   padding-left: 57px;      
+   padding-left: 55px;      
 }
 
 .advantage-item .icon {
