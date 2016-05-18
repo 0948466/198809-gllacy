@@ -648,25 +648,34 @@ h1 {
     position: relative;
 }
 
-.icon-hit {
-    display: block;
-    position: absolute;
-    background: #fff url('../img/icon-hit.png');
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-}
 
 .ice-creams img {
+    
     max-width: 100%;
     height: auto;
     border-radius: 50%;
     
 }
 
-.price {
+.img-ice-creams {
+    position: relative;
+}
+
+.icon-hit {
+    display: block;
     position: absolute;
-    top: 216px;
+    top:0;
+    left: 0;
+    background: #fff url('../img/icon-hit.png');
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+
+.price {
+    position: absolute;    
+    top: 75%;    
     color: #fff;
     font-size: 35px;
     line-height: 45px;
@@ -924,7 +933,7 @@ height: 210px;
 }
 
 .news-subscribe .side-right {
-          background: repeating-linear-gradient(135deg,white,white 5px,#92cdff 5px,#92cdff 10px,white 10px,white 15px,#fe9e90 15px,#fe9e90 20px);
+    background: repeating-linear-gradient(135deg,white,white 5px,#92cdff 5px,#92cdff 10px,white 10px,white 15px,#fe9e90 15px,#fe9e90 20px);
     padding: 5px;
     height: 220px;
     border-radius:15px;    
