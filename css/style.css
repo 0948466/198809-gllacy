@@ -2,9 +2,12 @@ body {
     color: #fff;
     font-weight: normal;
     font-family: "Roboto","Helvetica",neue;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #404040 ;
+    min-width: 900px;
+    max-width: 1200px;
+    
 }
 
 /*
@@ -17,7 +20,7 @@ body {
     min-width: 900px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2.3%;
+    padding: 2.3%;    
     position: relative;    
     box-sizing: border-box;
     font-size: 16px;
@@ -110,8 +113,7 @@ h1 {
 
 
 
-.main-header {
-    padding-top: 24px;
+.main-header {    
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -233,7 +235,8 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    min-width: 267px;   
+    min-width: 267px;
+    margin-bottom: 17px;
     
 }
 
@@ -307,9 +310,7 @@ h1 {
 .hours-phone p {
     margin: 0;
     padding: 0;
-    
-    
-    
+    margin-bottom: 5px;    
 }
 
 .hours {
@@ -661,7 +662,7 @@ h1 {
     -webkit-justify-content: space-between; 
     -ms-flex-pack: justify; 
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     }
 
 .ice-creams {    
@@ -884,7 +885,7 @@ h1 {
 }
 
 .advantage-item:nth-child(1),.advantage-item:nth-child(3) {    
-   padding-left: 55px;      
+   padding-left: 75px;      
 }
 
 .advantage-item .icon {
@@ -893,6 +894,10 @@ h1 {
     position: absolute;
     top: -10px;
     left: 0px;
+}
+
+.advantage-item .icon:nth-child(1),.advantage-item .icon:nth-child(3) {
+    left: 20px;
 }
 
 .advantage-item .ice-cream {
@@ -949,6 +954,8 @@ background: url(../img/icon-thermometer.svg) no-repeat;
 height: 210px;
     background: #f8f7f4;
     border-radius: 15px;
+    padding: 27px 20px; 
+    box-sizing: border-box;
     
 
 }
@@ -1091,9 +1098,8 @@ height: 210px;
     position: relative;    
     height: 430px;
     background:#d9d3ba url(../img/map.jpg) no-repeat;
-    min-width: 900px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 104.6%;
+    margin-left:-2.3%;
 }
 
 .contacts {
@@ -1192,15 +1198,17 @@ height: 210px;
     background: url(../img/social-vk.svg)  no-repeat; 
 }
 
+/*
 .line {
     position: absolute;
     top:0;
-    left: 50%;
+    left: 0%;
     height: 1px;
     
     margin-left: -573px;
     background-color: #a9bbb1;    
 }
+*/
 
 .footer-documentation {    
     position: relative;     
@@ -1245,47 +1253,7 @@ height: 210px;
     line-height: 18px;
 }
 
-.modal-content-entrance {
-    position: absolute;
-    top: 60px;
-    margin-top: 2.3%;
-    left: 97.7%;
-    margin-left: -450px;
-    width: 320px;
-    background-color: #f8f7f4;
-    padding: 20px;
-    font-size: 14px;
-    line-height: 24px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
 
-.login-email, .password {
-    width: 238px;
-    margin: 0;
-    margin-bottom: 20px;
-    border: 1px solid #d3d3d2;
-    border-radius: 5px;
-    padding: 14px;
-    
-}
-
-.btn-entrance {
-    background-color: #f16642;
-    border-radius: 25px;
-    padding: 10px 25px;
-    color: #fefefe;
-    margin-right: 20px;
-    float: left;
-}
-
-.modal-content-entrance a {
-    font-size: 14px;
-    line-height: 24px;
-    color: #323232;
-    text-decoration: underline;
-    float: left;
-}
 
 .modal-content-feedback {
     position: fixed;
@@ -1388,7 +1356,8 @@ height: 210px;
 
 .modal-content-search {
     position: absolute;
-    top: 88px;
+    top: 35px;
+    margin-top: 2.3%;    
     left: 97.7%;
     margin-left: -545px;
     width: 320px;
@@ -1407,11 +1376,54 @@ height: 210px;
     border-radius: 5px;
 }
 
+.modal-content-entrance {
+    position: absolute;
+    top: 35px;
+    margin-top: 2.3%;
+    left: 97.7%;
+    margin-left: -450px;
+    width: 320px;
+    background-color: #f8f7f4;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-email, .password {
+    width: 238px;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    padding: 14px;
+    
+}
+
+.btn-entrance {
+    background-color: #f16642;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: #fefefe;
+    margin-right: 20px;
+    float: left;
+}
+
+.modal-content-entrance a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #323232;
+    text-decoration: underline;
+    float: left;
+}
+
 .modal-content-shopping-cart {
     position: absolute;
     content: "";
-    top: 88px;
-    left: 97.7%;
+    top: 35px;
+    margin-top: 2.3%;
+    left:97.7%;
     margin-left:-541px;
     
     padding: 0px 15px;    
