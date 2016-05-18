@@ -884,7 +884,7 @@ h1 {
     padding-left: 55px;
 }
 
-.advantage-item:nth-child(1),.advantage-item:nth-child(3) {    
+.advantage-item:nth-child(2n+1) {    
    padding-left: 75px;      
 }
 
@@ -896,7 +896,7 @@ h1 {
     left: 0px;
 }
 
-.advantage-item .icon:nth-child(1),.advantage-item .icon:nth-child(3) {
+.advantage-item:nth-child(2n+1) .icon {
     left: 20px;
 }
 
