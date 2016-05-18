@@ -659,6 +659,7 @@ h1 {
 
 .ice-creams img {
     max-width: 100%;
+    height: auto;
     border-radius: 50%;
     
 }
