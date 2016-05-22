@@ -83,7 +83,7 @@ body {
     background-image: linear-gradient(0deg,#ca3824,#f26843);
 }
 
-btn-style:hover {
+.btn-style:hover {
     box-shadow: 0 2px 2px 0 rgba(172,16,0,1);
     background-image: linear-gradient(0deg,#e74a35,#f26843);
 }
@@ -352,17 +352,9 @@ h1 {
     vertical-align: top;
     color: #fff;
     text-decoration: none;
-    background-color: #ed5a3d;
+/*    background-color: #ed5a3d;*/
     border-radius: 100px; 
     margin-bottom: 40px;
-}
-
-.slide-btn:hover {
-    background-color: #ed7360;    
-}
-
-.slide-btn:active {
-    background-color: #da4e36;
 }
 
 .slider-controls {
