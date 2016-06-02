@@ -582,9 +582,46 @@ h1 {
     margin-bottom: 17px;
 }
 
-.filter-radio:hover {
+.login-radio {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.login-radio input[type="radio"] {
+    display: none;
+}
+
+.login-radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.login-radio:hover input[type="radio"] + .radio-indicator {
+    border: 2px solid #fff;
+    width: 17px;
+    height: 17px;
+}
+
+.login-radio input[type="radio"]:checked + .radio-indicator::before {
+    position: absolute;
+    content: "";
+    top:4px;
+    left: 4px;
+    width: 11px;
+    height: 11px;
     background-color: #fff;
-    color: #323232;
+    border-radius: 100%;      
+}
+
+.login-radio:hover input[type="radio"]:checked + .radio-indicator::before {
+    top:3px;
+    left:3px;
 }
 
 .filter-radio ul {
@@ -628,15 +665,79 @@ h1 {
     line-height: 18px;
 }
 
-.filter-fillers ul:hover {
-    background-color: #fff;
-    color: #323232;
-}
 
 .filter-fillers ul li {
     display: inline-block;
     vertical-align: top;
     padding-right: 20px;
+}
+
+.login-checkbox {
+    position: relative;
+    
+     padding-left: 25px;
+    cursor: pointer;
+}
+
+.login-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+} 
+
+.login-checkbox:hover input[type="checkbox"] + .checkbox-indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+}
+
+.login-checkbox input[type="checkbox"]:checked + 
+    .checkbox-indicator::before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 1px;
+        width: 9px;
+        height: 3px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        
+}
+
+.login-checkbox:hover input[type="checkbox"]:checked + 
+.checkbox-indicator::before {
+    top:8px;
+    left: 0;
+}
+
+.login-checkbox input[type="checkbox"]:checked + 
+    .checkbox-indicator::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        width: 12px;
+        height: 3px;
+        background-color: #fff;
+        transform: rotate(-45deg);
+}
+
+.login-checkbox:hover input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    top:7px;
+    left: 4px;
+}
+
+.disabled-filter {
+    opacity: 0.4;
 }
 
 .filter-btn {
@@ -682,14 +783,19 @@ h1 {
 .ice-creams {    
     margin-bottom: 40px;
     position: relative;
+    min-width: 214px;
+    
+    max-width: 278px;
+    
+    
 }
 
 
-.ice-creams img {
-    
-    max-width: 100%;
+.ice-creams img {    
     height: auto;
+    width:100%;
     border-radius: 50%;
+/*    margin: 10px;*/
     
 }
 
@@ -736,20 +842,24 @@ h1 {
 
 .quick-view {
     position: absolute;
-    display: none;
+    top:100%;
+    left: 0;
+    display: none;    
     width: 100%;
     z-index: 10;
     
 }
 
-.ice-creams .quick-view-btn { 
+.quick-view .quick-view-btn {     
     margin: 0;
     padding: 0;
-    margin: 20px 15px;
+    margin: auto;
     top: 100%;
     left: 0; 
+    min-width: 195px;
+    max-width: 200px;
     display: block;
-    padding: 15px;    
+    padding: 15px 0;    
     background-color: #f06541;
     border-radius: 100px;
     color: #fff;
@@ -768,7 +878,7 @@ h1 {
 }
 
 .ice-creams:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);    
 }
 
 .ice-creams:hover a {
@@ -1280,12 +1390,10 @@ height: 210px;
     margin: 0;
     padding: 0;
     width: 480px;
-    top:30%;
-    
-    margin-left: -240px;
+    top:30%;  
     left: 50%;
-    padding: 25px;
-    margin-left: -240px;
+    transform: translate(-50%,-25%);
+    padding: 25px;    
     font-size: 16px;
     line-height: 24px;
     background-color: #f8f7f4;
