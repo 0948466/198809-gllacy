@@ -6,8 +6,7 @@ body {
     padding: 0;
     background: #404040 ;
     min-width: 900px;
-    max-width: 1200px;
-    
+    max-width: 1200px;    
 }
 
 /*
@@ -61,22 +60,7 @@ body {
     
 }
 
-/*
-.container {
-    -webkit-flex-basis: 100%; 
-    -ms-flex-preferred-size: 100%; 
-    flex-basis: 100%;
-    box-sizing: border-box;
-    max-width: 1146px;
-    min-width: 860px;    
-    box-sizing: border-box;
-    margin: auto;
-    font-size: 16px;
-    line-height: 22px;
-    color: #323232;
-    font-weight: normal;    
-}
-*/
+
 
 .btn-style {
     box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
@@ -352,7 +336,6 @@ h1 {
     vertical-align: top;
     color: #fff;
     text-decoration: none;
-/*    background-color: #ed5a3d;*/
     border-radius: 100px; 
     margin-bottom: 40px;
 }
@@ -389,19 +372,6 @@ h1 {
     display: block;
 }
 
-/*
-#btn-1:checked ~ .wrap .index-slider {    
-    background: #849d8f url(../img/slide1.png) 300px 0 no-repeat;
-}
-
-#btn-2:checked ~ .wrap .index-slider {
-    background: #8996a6 url(../img/slide2.png) 300px 0 no-repeat;
-}
-
-#btn-3:checked ~ .wrap .index-slider {
-    background: #9d8b84 url(../img/slide3.png) 300px 0 no-repeat;
-}
-*/
 
 #btn-1:checked ~ .wrap {    
     background: #849d8f url(../img/slide1.png) 50% 5% no-repeat;
@@ -783,10 +753,8 @@ h1 {
 .ice-creams {    
     margin-bottom: 40px;
     position: relative;
-    min-width: 214px;
-    
-    max-width: 278px;
-    
+    min-width: 214px;    
+    max-width: 278px;   
     
 }
 
@@ -795,7 +763,6 @@ h1 {
     height: auto;
     width:100%;
     border-radius: 50%;
-/*    margin: 10px;*/
     
 }
 
@@ -840,6 +807,22 @@ h1 {
     vertical-align: middle;
 }
 
+.ice-creams::before {
+    display: none;
+    position: absolute;
+    content: "";
+    top:-3px;
+    left:-3px;
+    width: calc(100% + 5px);  
+    height: calc(100% + 80px);
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+.ice-creams:hover::before  {
+    display: block;
+}
+
 .quick-view {
     position: absolute;
     top:100%;
@@ -869,17 +852,14 @@ h1 {
 }
 
 .ice-creams:hover .quick-view {
-    display: block;
-    background-color: rgba(255,255,255,0.2);    
+    display: block;   
+    
 }
 
 .quick-view-btn:hover {
-    background-color: #f48568;;
+    background-color: #f48568;    
 }
 
-.ice-creams:hover {
-    background-color: rgba(255,255,255,0.2);    
-}
 
 .ice-creams:hover a {
     text-decoration: none;
